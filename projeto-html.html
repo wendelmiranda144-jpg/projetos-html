@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Saúde</title>
+    <style>
+        ul {
+            list-style: none;
+        }
+
+        .topo {
+            margin-right: 50px;
+            margin-left: 50px;
+            margin-top: 40px;
+            margin-bottom: 50px;
+            border-radius: 20px;
+            border: solid 1px;
+            background-color: silver;
+            text-align: center;
+            color: black;
+        }
+
+        .sub {
+            border-radius: 20px;
+            border: solid 1px;
+            margin-bottom: 50px;
+            margin-left: 50px;
+            margin-right: 50px;
+            background-color: antiquewhite;
+            text-align: center;
+            color: black;
+        }
+
+        .texto1 {
+            background-color: antiquewhite;
+            text-align: center;
+            color: black;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        .formulário {
+            margin-bottom: 10px;
+            background-color: antiquewhite;
+            text-align: center;
+            color: black;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .formulário2 {
+            margin-bottom: 10px;
+            background-color: antiquewhite;
+            text-align: center;
+            color: black;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .formulário3 {
+            margin-bottom: 10px;
+            background-color: antiquewhite;
+            text-align: center;
+            color: black;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .formulário4 {
+            margin-bottom: 30px;
+            background-color: antiquewhite;
+            text-align: center;
+            color: black;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .inferior {
+            text-align: center;
+            border-radius: 40px;
+            border-left: 30px;
+            border-right: 30px;
+            margin-bottom: 50px;
+            background-color: antiquewhite;
+            margin-left: 120px;
+            margin-right: 120px;
+            font-style: italic;
+            color: red;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .inferior0 {
+            
+            margin-bottom: 30px;
+            background-color: antiquewhite;
+            text-align: center;
+            color: black;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .inferior1 {
+            background-color: white;
+            text-align: left;
+            margin-left: 30px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-style: italic;
+            color: blue;
+        }
+
+
+
+        @media (max-width: 600px) {
+
+
+            .topo
+            .sub
+            .texto1
+            .formulário
+            .formulário2
+            .formulário3
+            .formulário4
+            .inferior
+            .inferior0
+            .inferior1 {
+
+                width: 100%;
+                float: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="topo">
+        <h1>Bem vindo ao portal saúde.</h1>
+    </div>
+
+    <div class="sub">
+        <h2>Abaixo você encontrará um formulário, por favor marque todos os campos:</h2>
+    </div>
+
+    <div class="texto1">
+        <p> Preencha os dados abaixo corretamente, para dar entrada no benefício farmácia de sua região.</p>
+    </div>
+    <hr><br>
+
+    <form class="formulário">
+        <label for="campo nome">Digite seu nome</label>
+        <input id="campo nome" type="text" placeholder="Digite seu nome" required>
+    </form>
+    <br>
+
+    <form class="formulário2">
+        <label for="campo Cpf">Digite seu cpf</label>
+        <input id="campo Cpf" type="text" placeholder="Digite seu cpf" required>
+    </form>
+    <br>
+
+    <form class="formulário3">
+        <label for="nascimento">Data de Nascimento</label><br>
+        <input type="date" id="nascimento" name="nascimento" required>
+    </form><br>
+
+    <form class="formulário4">
+        <label for="Email">Email</label>
+        <input type="email" id="email" name="email" required placeholder="Digite seu email">
+        e por fim, digite sua cidade <label for="Cidade"></label>
+        <input type="Cidade" required placeholder="Digite sua cidade">
+    </form><br>
+    <hr>
+
+    <div class="inferior">
+        <p class="inferior0">Segue abaixo uma pré consulta, marque com atenção os sintomas abaixo:</p>
+        <ul>
+            <li>
+                <input type="checkbox" required>Febre, acima de 38 graus.
+            </li><br>
+
+            <li>
+                <input type="checkbox" required>Dores no corpo.
+            </li><br>
+
+            <li>
+                <input type="checkbox" required>Tosse persistente(7 dias).
+            </li><br>
+
+            <li>
+                <input type="checkbox" required>Manchas pela pele.
+
+            </li>
+            <br>
+
+            <li>
+                <input type="checkbox" required>Sensação de desmaio.
+            </li>
+
+
+        </ul><br>
+
+        <input type="submit" required>
+
+    </div>
+
+    <div class="inferior1">
+        <p><a href="treino-livre2">Quem somos?</a></p>
+        <p>Nunca se automedique!</p>
+        <p>Telefones para contato: 2688-0000</p>
+        <p>São Paulo</p>
+
+    </div>
+
+
+</body>
+
+</html>
