@@ -65,7 +65,7 @@
         }
 
         .formulário4 {
-            margin-bottom: 30px;
+            margin-bottom: 50px;
             background-color: antiquewhite;
             text-align: center;
             color: black;
@@ -73,16 +73,17 @@
         }
 
         .inferior {
+            text-transform: capitalize;
             text-align: center;
             border-radius: 40px;
             border-left: 30px;
             border-right: 30px;
-            margin-bottom: 50px;
+            margin-bottom: 80px;
             background-color: antiquewhite;
             margin-left: 120px;
             margin-right: 120px;
             font-style: italic;
-            color: red;
+            color: rgb(76, 0, 255);
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         }
 
@@ -103,9 +104,7 @@
             font-style: italic;
             color: blue;
         }
-
-
-
+        
         @media (max-width: 600px) {
 
 
@@ -145,13 +144,13 @@
 
     <form class="formulário">
         <label for="campo nome">Digite seu nome</label>
-        <input id="campo nome" type="text" placeholder="Digite seu nome" required>
+        <input id="campo nome" type="text" placeholder="Nome" required>
     </form>
     <br>
 
     <form class="formulário2">
         <label for="campo Cpf">Digite seu cpf</label>
-        <input id="campo Cpf" type="text" placeholder="Digite seu cpf" required>
+        <input id="campo Cpf" type="text" placeholder=" Cpf" required>
     </form>
     <br>
 
@@ -162,9 +161,9 @@
 
     <form class="formulário4">
         <label for="Email">Email</label>
-        <input type="email" id="email" name="email" required placeholder="Digite seu email">
+        <input type="email" id="email" name="email" required placeholder=" Email">
         e por fim, digite sua cidade <label for="Cidade"></label>
-        <input type="Cidade" required placeholder="Digite sua cidade">
+        <input type="Cidade" required placeholder=" Cidade">
     </form><br>
     <hr>
 
@@ -196,7 +195,10 @@
 
         </ul><br>
 
-        <input type="submit" required>
+        <div class="botao">
+               <input type="submit" required>  
+        </div>
+       
 
     </div>
 
